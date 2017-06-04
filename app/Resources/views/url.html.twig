@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Enter Url</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <form action="/enter" method="post">
+            <p>Full url</p>
+            <p><input type="text" name="fullUrl" placeholder="full url" value=""></p>
+            <p>Short url</p>
+            <p><input type="text" name="shortUrl" placeholder="short url" value=""></p>
+            <p><input type="submit" name="create" value="Create"></p>
+        </form>
+    </body>
+</html>
