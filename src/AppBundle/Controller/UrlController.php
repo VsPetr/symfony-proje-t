@@ -21,11 +21,10 @@ class UrlController extends Controller
 
         if (!$url) {
             throw $this->createNotFoundException(
-                'No product found for url ' . $shortUrl
+                'No url found for url ' . $shortUrl
             );
         }
 
-        // ... do something, like pass the $product object into a template
         return $this->redirect($url);
     }
 
